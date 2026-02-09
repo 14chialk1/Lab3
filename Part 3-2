@@ -1,0 +1,13 @@
+//
+// Created by hawsin on 2/4/26.
+//
+
+#ifndef TEMPLOGGER_TEMPANALYZER_H
+#define TEMPLOGGER_TEMPANALYZER_H
+
+
+class TempAnalyzer {
+};
+
+
+#endif //TEMPLOGGER_TEMPANALYZER_H
