@@ -1,0 +1,33 @@
+//
+// Created by hawsin on 2/4/26.
+//
+
+#include "TempAnalyzer.h"
+
+#include <iostream>
+using namespace std;
+#include <iomanip>
+#include <fstream>
+
+int main() {
+    int days = 0;
+    double sum = 0;
+    double temp = 0;
+
+    ifstream inputFile;
+    inputFile.open("temperatures.txt");
+
+    while(inputFile >> temp) {
+        days += 1;
+        sum += temp;
+    }
+
+    inputFile.close();
+
+    double average = sum / days;
+
+    cout << "Temperatures analyzed for " << days << " days." << endl;
+    cout << fixed << setprecision(1) << "The average temperature was: " << average << endl;
+
+    return 0;
+}
